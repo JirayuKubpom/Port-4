@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Family and icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<!-- Main CSS by w3.css -->
+<link rel="stylesheet" href="w3.css">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body style="background-color: rgb(222, 226, 226);">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b style="color: red;">แร็พเปอร์</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photo</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Eazy-E</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Jeezy</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">50 Cent</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cassidy</a>
+    <a href="#contact1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gucci Mane</a>
+    <a href="#contact2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Snoop Dogg</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>6 แร็พเปอร์แก๊งสเตอร์</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>ตัวจริงเสียงจริง</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/jay-z.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>Eazy-E</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/kitchenconcrete.jpg" width="50%">
+    <p> หลายๆคนคงรู้จักเจ้าพ่อแห่งคอมพ์ตันกันดีอยู่แล้ว ซึ่งเม็ดเงินที่เขาหามาได้นั้นมาจากการตั้งตัวเป็นแก๊งสเตอร์และขายยาเสพย์ติดแทบทั้งสิ้น ซึ่งหากใครจะเป็นเจ้าพ่อในวงการนี้ Eazy-E คือหนึ่งในนั้นอย่างไม่ต้องสงสัย โดยเรื่องราวที่เราเห็นในภาพยนตร์นั้นเป็นแค่เพียงเศษ 1 ส่วน 10 เท่านั้น และถ้าหากไม่มีเขาคอยสร้างเรื่องอยู่เบื้องหลัง คงไม่มีวันที่เราจะได้เห็น Dr.Dre และ Ice Cube เติบใหญ่ได้จนถึงวันนี้อย่างแน่นอน
+    </p></center>
+  </div><br>
+  
+
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>Jeezy</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/diningroom.jpg" width="50%">
+    <p>เรื่องราวสุดระห่ำของ 50Cent ทุกคนคงจะทราบกันดีอยู่แล้ว แต่น้อยคนนักที่จะรู้ว่าแม่ของ 50Cent คือ "ราชินียาเสพย์ติด" ของนิวยอร์คโดยแท้จริง โดยเจ้าตัวนั้นเคยทะเลาะกับตำนานนักเลงของสหรัฐอเมริกามานับไม่ถ้วน ซึ่งเขาเคยให้สัมภาษณ์กับ Dj Drama ไว้เมื่อปี 2015 ว่า "คนที่ผมทะเลาะด้วยไม่ใช่แร็พเปอร์ พวกนี้ไม่ได้อยู่ในสายตาผมหรอก ไม่ว่าจะ Ja Rule, Preme (Kenneth ‘Supreme’ McGriff) แล้วก็ไม่ใช่ The Game แต่คนที่ผมเคยมีเรื่องมีราวด้วยคือระดับเจ้าพ่อของจริง Jimmy Henchman ยังไงล่ะ" (ผู้อยู่เบื้องหลังการบงการฆ่า 2Pac, การค้ามนุษย์และยาเสพย์ติดรายใหญ่ที่สุดในสหรัฐอเมริกา)</p></center>
+  </div><br><br><br>
+
+
+
+
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>50 Cent</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/livingroom.jpg" width="50%">
+    <p>ถ้าเปรียบเมนูนี้กับวัฒนธรรมอาหารฝั่งตะวันตก เราคงเรียกเมนูนี้ว่า ทาร์ทาร์ (tartare) ในแบบฉบับอีสาน ก้อยคือเนื้อดิบสับหรือหั่นเป็นชิ้นเล็ก ๆ แล้วนำไปคลุกเคล้ากับเครื่องเทศและผัก เนื้อที่ใช้ทำมีทั้งวัว ควาย กวาง ปลา กุ้ง หรือแม้แต่ไข่มดแดง ส่วนผสมอื่น ๆ จะเหมือนกับลาบ และแน่นอนว่าต้องกินคู่กับข้าวเหนียวร้อน ๆ เพื่อให้ซึมซับประสบการณ์อาหารอีสานอย่างเต็มที่</p></center>
+  </div><br><br><br>
+  
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>Cassidy</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/jay-z.jpg" width="50%">
+    <p> แร็พเปอร์ฝีปากกล้ารายนี้เป็นคนที่เถื่อนจัดไม่แพ้ใครในโลกา เขาเคยถูกตั้งข้อหาแทบจะครบทุกข้อหาแล้วทั้ง ฆาตกรรม, พยายามฆ่า, ทำร้ายร่างกายจนพิการ และครั้งที่โหดสุดของเขาน่าจะเป็นเมื่อปี 2005 โดย Cassidy ใช้ปืนคู่ใจทำการฆ่าชายผู้โชคร้ายรายหนึ่งตายคาที่ ส่วนเพื่อนของผู้โชคร้ายอีก 2 คนบาดเจ็บสาหัส ซึ่งไม่รู้ว่า Cassidy ไปเกลี้ยกล่อมเอาอีท่าไหน ชาย 2 คนที่บาดเจ็บสาหัสกลับให้การว่า Cassidy นั้นไม่ได้มีเจตนาที่จะฆ่าเพื่อนของเขาจึงทำให้เขาติดคุกเพียง 1 ปีโดยถูกปล่อยตัวในปี 2006 และนี่คือเรื่องจากเศษน้อยส่วนมากของเขาเท่านั้น</p></center>
+  </div><br><br><br>
+
+
+  <div class="w3-container" id="contact1" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>Gucci Mane</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/bedroom.jpg" width="50%">
+    <p> Gucci Mane ไม่เคยกล่าวอ้างว่าเป็นแก๊งสเตอร์ที่ยิ่งใหญ่ที่สุดในโลกแต่การมีตัวตนของเขานั้นไม่ธรรมดา ย้อนไปเมื่อปี 2005 Gucci และเพื่อนของเขาถูกกลุ่มชายฉกรรจ์รุมทำร้าย ทำให้ Gucci ต้องควักปืนยิงจนมีคนเสียชีวิตคาที่ 1 ราย และถูกตั้งข้อหาฆาตกรรม ซึ่งคดีนี้เองที่เป็นที่โจษจันเพราะ Gucci นั้นได้ทำการยื่นอุทธรณ์ว่าเป็นการป้องกันตัว และศาลกลับยกฟ้องทันทีโดยอ้างว่าหลักฐานไม่เพียงพอ และหลังจากเหตุการณ์ดังกล่าวทำให้ Gucci Mane กลายมาเป็นศิลปินดังจนถึงทุกวันนี้</p></center>
+  </div><br><br><br>
+
+
+  <div class="w3-container" id="contact2" style="margin-top:75px">
+    <center><h1 class="w3-xxxlarge w3-text-red"><b>Snoop Dogg</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="images/atrium.jpg" width="50%">
+    <p> The Dogg Father นั้นตั้งตัวเป็นเจ้าพ่อตั้งแต่วัยรุ่นด้วยการมีลูกน้องในคอนโทรลถึง 20 คน และเหตุการณ์ที่ทำให้เขากลายเป็นที่รู้จักคือครั้งเมื่อปี 1993 ซึ่งเป็นปีที่เขาพยายามปลีกตัวออกจากวงการนักเลงเข้าสู่วงการเพลง ในปีดังกล่าว Snoop Dogg นั้นมีเรื่องมีราวกับแก๊งคู่อริในลองบีช, แคร์ลิฟอร์เนีย โดยเขาและบอดี้การ์ดได้ทำการฆาตกรรมชายคนหนึ่งที่ชื่อ Philip Woldemariam ตายคาที่จนโดนตั้งข้อหาร่วมกันฆาตกรรม แต่ตดยังไม่ทันหายเหม็นทั้งคู่กลับถูกปล่อยตัวออกมาอย่างหน้าตาเฉยทันที ถึงแม้ว่าเราจะไม่เคยได้ยินเรื่องนี้จากปากของ Snoop Dogg แต่มันต้องมีเงื่อนงำบางอย่างแน่นอน</p></center>
+  </div>
+
+  <!-- The Team -->
+ <br><br><br><div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/372260568_834993628013555_5964480292837406322_n.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <center><h3>นายจิรายุ เจริญสุข</h3>
+          <p class="w3-opacity">ผู้จัดทำ</p></center>
+        </div>
+      </div>
+    </div>
+
+  
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
